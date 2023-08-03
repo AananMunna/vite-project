@@ -49,7 +49,4 @@ jobs:
           publish_dir: ./dist 
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-            install: false
-            start: npm --version
+        uses: cypress-io/github-action@v2.2.7
