@@ -1,0 +1,26 @@
+.accordion-button:focus {
+    z-index: none;
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+}
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: none;
+    margin: 20px;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    font-weight: 700;
+    background-color: #FBB244; 
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
