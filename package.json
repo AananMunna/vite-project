@@ -31,5 +31,11 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.1",
         "vite": "^4.4.0"
-    }
+    } ,
+    "resolutions": {
+        "node-sass": "https://registry.npmjs.org/node-sass/-/node-sass-7.0.0.tgz"
+      },
+      "scripts": {
+        "preinstall": "npx npm-force-resolutions"
+      }
 }
